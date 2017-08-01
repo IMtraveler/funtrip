@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="facebook_app_id">1404180256325301</string>
+    <string name="遊客首頁">遊客首頁</string>
+    <string name="導遊首頁">導遊首頁</string>
+    <string name="選擇身分">選擇身分</string>
+    <string name="facebook">Facebook登入</string>
+    <string name="登出">登出</string>
+    <string name="client">遊客首頁</string>
+    <string name="button">音訊</string>
+    <string name="start">播放</string>
+    <string name="pause">暫停</string>
+    <string name="stop">停止</string>
+    <string name="播放">播放</string>
+    <string name="暫停">暫停</string>
+    <string name="textview">音檔名稱</string>
+    <string name="text">音檔名稱</string>
+    <string name="back">返回上一頁</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="skip">略過</string>
+    <string name="map">地圖</string>
+    <string name="upload">上傳</string>
+    <string name="mysql">MySQL</string>
+</resources>
