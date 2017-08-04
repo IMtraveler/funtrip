@@ -8,11 +8,16 @@ import android.content.Intent;
 import android.util.Log;
 import android.widget.TextView;
 import android.os.StrictMode ;
+import android.app.DownloadManager ;
+import android.content.Context ;
+import android.net.Uri ;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 
 public class MainPageActivity extends AppCompatActivity  {
+
+    DownloadManager downloadManager ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,7 +88,23 @@ public class MainPageActivity extends AppCompatActivity  {
                 MainPageActivity.this.finish();
             }
         });
-    }
+
+
+        Button btn_download = (Button)findViewById(R.id.btn_download);
+
+        btn_download.setOnClickListener(new Button.OnClickListener(){
+        @Override
+        public void onClick(View v) {
+            downloadManager = (DownloadManager)getSystemService(Context.DOWNLOAD_SERVICE) ;
+            Uri uri = Uri.parse("http://140.112.107.125:47155/html/uploaded/sample.mp4") ;
+            DownloadManager.Request request = new DownloadManager.Request(uri) ;
+            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+            Long reference = downloadManager.enqueue(request) ;
+
+        }
+    });
+}
+
 
     private Button button_get_record;
     private void findViews() {
