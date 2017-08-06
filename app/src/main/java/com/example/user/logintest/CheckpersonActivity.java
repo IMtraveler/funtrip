@@ -25,7 +25,7 @@ public class CheckpersonActivity  extends AppCompatActivity {
                 CheckpersonActivity.this.finish();
             }
         });
-        //test
+        //test hi
 
     }
 }
