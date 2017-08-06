@@ -59,7 +59,7 @@ public class MainPageActivity extends AppCompatActivity  {
                 Intent intent = new Intent();
                 intent.setClass(MainPageActivity.this,MusicActivity.class);
                 startActivity(intent);
-                MainPageActivity.this.finish();
+                //MainPageActivity.this.finish();
             }
         });
 
@@ -72,7 +72,7 @@ public class MainPageActivity extends AppCompatActivity  {
                 Intent intent = new Intent();
                 intent.setClass(MainPageActivity.this,MapsActivity.class);
                 startActivity(intent);
-                MainPageActivity.this.finish();
+                //MainPageActivity.this.finish();
             }
         });
 
@@ -85,7 +85,20 @@ public class MainPageActivity extends AppCompatActivity  {
                 Intent intent = new Intent();
                 intent.setClass(MainPageActivity.this,UploadActivity.class);
                 startActivity(intent);
-                MainPageActivity.this.finish();
+                //MainPageActivity.this.finish();
+            }
+        });
+
+        Button btn_toLocation = (Button)findViewById(R.id.btn_toLocation);
+
+        btn_toLocation.setOnClickListener(new Button.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent();
+                intent.setClass(MainPageActivity.this,LocationListActivity.class);
+                startActivity(intent);
+                //MainPageActivity.this.finish();
             }
         });
 
@@ -123,7 +136,6 @@ public class MainPageActivity extends AppCompatActivity  {
                     } catch(Exception e) {
                         Log.e("log_tag", e.toString());
                     }
-
                     TextView showdb= (TextView) findViewById(R.id.tv_data);
                     showdb.setText(result);
                 }

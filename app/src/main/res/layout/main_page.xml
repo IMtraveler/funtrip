@@ -67,8 +67,8 @@
         android:layout_marginTop="35dp"
         android:text="@string/mysql"
         android:layout_below="@+id/btn_toUpload"
-        android:layout_alignLeft="@+id/btn_toMap"
-        android:layout_alignStart="@+id/btn_toMap" />
+        android:layout_alignLeft="@+id/btn_toUpload"
+        android:layout_alignStart="@+id/btn_toUpload" />
 
     <TextView
         android:id="@+id/tv_data"
@@ -88,6 +88,15 @@
         android:layout_toEndOf="@+id/tv_data"
         android:layout_toRightOf="@+id/tv_data"
         android:text="@string/download" />
+
+    <Button
+        android:id="@+id/btn_toLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_download"
+        android:layout_alignRight="@+id/btn_download"
+        android:layout_alignTop="@+id/btn_mysql"
+        android:text="@string/sqlite" />
 
 
 </RelativeLayout>

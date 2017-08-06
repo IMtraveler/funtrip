@@ -22,4 +22,5 @@
     <string name="upload">上傳</string>
     <string name="mysql">MySQL</string>
     <string name="download">下載</string>
+    <string name="sqlite">SQLite</string>
 </resources>
